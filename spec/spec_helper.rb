@@ -1,4 +1,6 @@
 
+ENV["RAILS_ENV"] ||= 'test'
+
 # Always report test coverage when running tests
 # simplecov test coverage has to start before any application code has loaded
 # (so we can't put it at the top of the test_helper as recommended because when 
@@ -12,8 +14,6 @@ require 'simplecov'
 # excluded
 SimpleCov.start 'rails'
 
-
-ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
