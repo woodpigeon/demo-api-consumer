@@ -1,6 +1,6 @@
 DemoApiConsumer::Application.routes.draw do
 
-  root :to => "admin/teams#index"
+  root :to => "home#index"
 
   namespace :admin do
   
