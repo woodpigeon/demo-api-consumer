@@ -1,0 +1,7 @@
+
+# use figaro + application.yml for injecting env vars
+development:
+
+test:
+
+#... 

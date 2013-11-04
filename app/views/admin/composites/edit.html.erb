@@ -1,0 +1,13 @@
+
+<h2><%= @presenter.silly_name %></h2>
+
+<%= simple_form_for(@presenter.team_form,
+    url: admin_composite_path(@presenter.team_form),
+    method: 'put', 
+    class: 'form-horizontal') do |f| %>
+  <%= f.hidden_field :id %>
+  <%= f.input :name, label: 'Enter the team name please' %>
+  <%= f.input :email, placeholder: 'user@domain.com' %>
+  <%= f.button :submit %>
+
+<% end %>
